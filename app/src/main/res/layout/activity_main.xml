@@ -5,9 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello world" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello world" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click me" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I'm a chip" />
+
+        <Switch
+            android:id="@+id/switchOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch off" />
+
+        <Switch
+            android:id="@+id/switchOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Switch on" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:progress="50" />
+
+    </LinearLayout>
+
 </RelativeLayout>
